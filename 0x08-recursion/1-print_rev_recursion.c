@@ -7,13 +7,11 @@
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
- 
-/* Function to print reverse of the passed string */
-void _print_rev_recursion(char *str)
+void _print_rev_recursion(char *s)
 {
-   if (*str != '\0')
-   {
-       _print_rev_recursion(str+1);
-       _putchar("%c", *str);
-   }
+	if (*s != '\0')
+	{
+		_print_rev_recursion(s + 1);
+		_putchar(*s);
+	}
 }
