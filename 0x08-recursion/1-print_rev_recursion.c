@@ -11,17 +11,9 @@
 /* Function to print reverse of the passed string */
 void _print_rev_recursion(char *str)
 {
-   if (*str)
+   if (*str != '\0')
    {
        reverse(str+1);
        _putchar("%c", *str);
    }
-}
- 
-/* Driver program to test above function */
-int main()
-{
-   char a[] = "I am Mostafa";
-   _print_rev_recursion(a);
-   return 0;
 }
